@@ -1,0 +1,41 @@
+body{
+    margin-bottom: 100px; /* compensate for footer */
+}
+nav{
+    background-color: darkkhaki;
+}
+
+section {
+    margin-top: 20px;
+    background-color: bisque;
+}
+
+footer {
+    position: fixed; /* remove from normal flow, do not move along with page scrolling*/
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    background-color: indianred;
+    width: 100%;
+}
+
+#footerContent{
+    width: 100px;
+    margin: 0 auto; /* auto margin to center the content */
+}
+
+@media screen and (min-width:600px) {
+    nav {
+        position: absolute; /* remove from normal flow, move along with page scrolling*/
+        left: 0;
+        width: 200px;
+    }
+    section {
+        margin-left: 200px; /* Compensate for nav */
+    }
+}
+@media screen and (max-width:599px) {
+    nav li {
+        display: inline;
+    }
+}
