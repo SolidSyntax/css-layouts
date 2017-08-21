@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+}
+
+#overlay {
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+  width: 100vw;
+
+  background-color: rgba(0,0,0,0.05);
+}
+
+#overlay-message {
+  font-family: Consolas, monaco, monospace;
+  font-size: 10vh;
+  opacity: 1;
+  color: red;
+
+}
+
+#arena {
+  height: 90vmin;
+  width: 90vmin;
+  display: grid;
+  border: medium solid black;
+}
+
+#snake {
+  background-color: green;
+  grid-area: 50/50;
+}
