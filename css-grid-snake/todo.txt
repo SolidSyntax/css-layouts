@@ -1,2 +1,0 @@
-SCSS verwijderen indien niet gebruikt
-css transition voor een meer vloeiende snake
